@@ -109,8 +109,21 @@ button
       img
         height: 80px
 
+        animation: moving .6s
+
       p
         font-size: 1.2rem
+
+        animation: moving .6s
+
+@keyframes moving
+  from
+    transform: translateX(50px)
+    opacity: 0
+
+  to
+    transform: translateX(0)
+    opacity: 1
 
 @media (max-width: 768px)
   body
